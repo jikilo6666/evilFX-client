@@ -1,0 +1,9 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "dev.evilfx.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": ["GameRendererMixin", "ClientPlayNetworkHandlerMixin", "ParticleManagerMixin"],
+  "injectors": { "defaultRequire": 0 }
+}

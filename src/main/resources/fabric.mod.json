@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "evilfx",
+  "version": "${version}",
+  "name": "evilFX client",
+  "description": "Lightweight client-side PvP HUD, crystal PvP utilities and performance helpers. Created by evilFX.",
+  "authors": ["evilFX"],
+  "contact": { "homepage": "https://discord.gg/evilFX" },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.evilfx.EvilFXClient"],
+    "modmenu": ["dev.evilfx.config.ModMenuIntegration"]
+  },
+  "mixins": [
+    { "config": "evilfx.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.5",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
